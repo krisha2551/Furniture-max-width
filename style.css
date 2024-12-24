@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
 /* containers */
 
 .container{
@@ -72,9 +83,12 @@
     flex-wrap: wrap;
 }
 
-header{
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+.menu i{
+    border: 1px solid orange;
+    color: orange;
+    padding: 5px;
+    font-size:18px;
+    border-radius: 2px;
 }
 
 .box{
@@ -137,6 +151,7 @@ header{
 
 #banner{
     background-color: #f8f9fd;
+    margin-top: 150px;
 }
 
 .box1 h4{
@@ -158,6 +173,46 @@ header{
     color: #a09e9c;
     font-size: 16px;
     line-height: 1.8;
+}
+
+.btns{
+    margin-top: 34px;
+}
+
+.btns button{
+    width: 170px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 1px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.btn1{
+    background: #e99c2e;
+    border: 1px solid #e99c2e;
+    color: #fff;
+    
+}
+
+.btn1:hover{
+    color: #e99c2e;
+    background: transparent;
+    border: 1px solid #e99c2e;
+}
+
+.btn2{
+    color: #e99c2e;
+    background: transparent;
+    border: transparent;
+}
+
+.btn2:hover{
+    background: transparent;
+    color: #e99c2e;
+    border: 1px solid #e99c2e;
 }
 
 .img-fluid{
@@ -204,6 +259,27 @@ header{
     text-align: left;
 }
 
+.btn3{
+    width: 118px;
+    height: 40px;
+    line-height: 40px;
+    color: #5f5b57;
+    background: transparent;
+    border: 1px solid #5f5b57;
+    font-size: 14px;
+    margin-top: 23px;
+    border-radius: 1px;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.btn3:hover{
+    color: #fff; ;
+    background: #5f5b57; 
+    border: 1px solid #5f5b57;
+}
+
 .section-header h2 {
     position: relative;
     text-align: center;
@@ -234,6 +310,73 @@ header{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+
+.new-img img{
+    transition: all 0.5s;
+}
+
+.new-img:hover img{
+    scale: 1.3;
+}
+
+.sale-bg1::before{
+    content: "sale";
+    font-family: 'Roboto', sans-serif;
+    background-color: orange;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.2;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.sale-bg2:before{
+    background: #47d93c;
+    content: "sale";
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.2;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.addCard{
+    /* border: 1px solid red; */
+    background-color: #33383c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+    color: white;
+    transform: translateY(100%);
+    transition: all 0.5s;
+}
+
+.new-img:hover .addCard{
+    transform: translateY(0%);
+}
+
+.addCard  i,span{
+    padding: 10px;
 }
 
 .new h4 a{
@@ -382,6 +525,8 @@ span.feature-review {
     margin: 20px 0px 0px;
 }
 
+/* footer1 */
+
 .foot-title h4{
     font-family: 'Roboto', sans-serif;
     color: #5f5b57;
@@ -389,6 +534,13 @@ span.feature-review {
     font-weight: 700;
     margin-bottom: 45px;
     text-transform: capitalize;
+}
+
+.foot-menu li{
+    transition:all 0.5s;
+}
+.foot-menu li:hover{
+    transform: translateX(10px);
 }
 
 .foot-menu ul li{
@@ -455,6 +607,8 @@ span.feature-review {
     transform: translateX(-40px);
 }
 
+/* footer2 */
+
 .footer{
     background: #f8f9fd;
     display: flex;
@@ -511,6 +665,34 @@ span.feature-review {
     color: #e99c2e;
 }
 
+.top{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: block;
+    width: 40px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    background: #e99c2e;
+    border: 1px solid #e99c2e;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    transition: .5s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top:hover{
+    background: #fff;
+    color: #e99c2e;
+    border: 1px solid #e99c2e;
+}
 
 
 
