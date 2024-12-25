@@ -149,6 +149,8 @@ header{
     font-weight: 500;
 }
 
+/* ---------SECTION-1--------- */
+
 #banner{
     background-color: #f8f9fd;
     margin-top: 150px;
@@ -215,6 +217,8 @@ header{
     border: 1px solid #e99c2e;
 }
 
+/* ---------SECTION-2--------- */
+
 .img-fluid{
     width: 100%;
 }
@@ -279,6 +283,8 @@ header{
     background: #5f5b57; 
     border: 1px solid #5f5b57;
 }
+
+/* ---------SECTION-3--------- */
 
 .section-header h2 {
     position: relative;
@@ -393,6 +399,8 @@ header{
     color: #e99c2e;
 }
 
+/* ---------SECTION-4--------- */
+
 .table-banner{
     background-image: url(img/table-banner.jpg);
     background-size: cover;
@@ -425,6 +433,24 @@ header{
 .table-banner h2 span{
     color: #e99c2e;
 }
+
+.btn4{
+    font-family: 'Roboto', sans-serif;
+    width: 180px;
+    height: 50px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 23px;
+    border-radius: 1px;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: capitalize;
+    background: #e99c2e;
+    border: 1px solid #e99c2e;
+}  
+
+/* ---------SECTION-5--------- */
 
 .sub-feature img{
     display: block;
@@ -480,6 +506,8 @@ span.feature-review {
     line-height: 1.1;
 }
 
+/* ---------SECTION-6--------- */
+
 .blog-img img{
     width: 100%;
 }
@@ -525,7 +553,7 @@ span.feature-review {
     margin: 20px 0px 0px;
 }
 
-/* footer1 */
+/* ---------FOOTER-1---------- */
 
 .foot-title h4{
     font-family: 'Roboto', sans-serif;
@@ -607,7 +635,7 @@ span.feature-review {
     transform: translateX(-40px);
 }
 
-/* footer2 */
+/* ----------FOOTER-2------------- */
 
 .footer{
     background: #f8f9fd;
